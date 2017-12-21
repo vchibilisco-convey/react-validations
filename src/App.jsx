@@ -1,9 +1,14 @@
 import React, {Component} from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import Form from './validations/Form';
 
 class App extends Component {
   render() {
     return (
-      <h1>Hello React :)</h1>
+      <MuiThemeProvider >
+        <Form/>
+      </MuiThemeProvider>
     );
   }
 }
